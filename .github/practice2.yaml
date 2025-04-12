@@ -1,7 +1,7 @@
 name : html
 on : push
 jobs: 
-    html:
+  html:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
