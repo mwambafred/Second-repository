@@ -1,0 +1,10 @@
+name: ecr
+on: push
+jobs: 
+  ecr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2  
+
+ 
