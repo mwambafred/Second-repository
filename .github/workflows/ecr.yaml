@@ -8,10 +8,10 @@ jobs:
         uses: actions/checkout@v2  
       - name: login into aws ecr 
         uses: aws-actions/configure-aws-credentials@v4.1.0
-        with: 
-          aws_access_key_id: ${{ secrets.aws_access_key_id }}
-          aws_secret_access_key: ${{ secrets.aws_secret_access_key }}
+      with:
           aws-region: us-east-1
+          aws-access-key-id: ${{ secrets.aws_access_key_id }}
+          aws-secret-access-key: ${{ secrets.aws_secret_access_key }}
 
 
     
