@@ -17,10 +17,10 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
         with:
           mask-password: 'false'
-      - name: Build, tag, and push image to Amazon ECR
+      - name: Build,image to Amazon ECR
         id: build-image
         run: |
-          docker build -t fredecr:lastest .
+         docker build -t fredecr:latest .
 
 
           
