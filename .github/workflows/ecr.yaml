@@ -1,5 +1,13 @@
 name: ecr
-on: push
+on: 
+    workflow_dispatch:
+        inputs:
+          image_tag:
+            type: string
+            description: 'Image tag to deploy'
+            required: true
+            default: 'latest'
+    # push:
 jobs: 
   ecr:
     runs-on: ubuntu-latest
