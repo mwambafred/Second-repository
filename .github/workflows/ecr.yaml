@@ -20,7 +20,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         run: |
-          docker build -t fredecr .
+          docker build -t fredecr:lastest .
 
 
           
