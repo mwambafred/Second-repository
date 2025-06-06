@@ -20,7 +20,7 @@ jobs:
       - name: Build,image to Amazon ECR
         id: build-image
         run: |
-         docker build -t fredecr:latest .
+         docker build -t freddy-repo:latest .
 
 
           
