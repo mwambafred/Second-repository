@@ -31,7 +31,10 @@ jobs:
          docker build -t freddy-repo:latest .
          docker tag freddy-repo:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1 
          docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1
-
+      - name: setup kebectl
+        run: |
+          aws eks update-kubeconfig --name "curious-electro-outfit" --region us-east-1
+          kubectl get nodes -list 
 
 
 
