@@ -29,6 +29,10 @@ jobs:
         id: build-image
         run: |
          docker build -t freddy-repo:latest .
+         docker tag freddy-repo:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1 
+         docker push ${{ secrets.AWS_ACCOUNT.ID }}.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1
+
+
 
 
           

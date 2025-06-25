@@ -1,0 +1,19 @@
+apiVersion: apps/v1  # Specifies Kubernetes API version
+kind: Deployment  # Defines the type of resource
+metadata:
+  name: my-app  # Name of the deployment
+spec:
+  replicas: 2  # Number of pods to run
+  selector:
+    matchLabels:
+      app: my-app  # Defines pod labels to match
+  template:
+    metadata:
+      labels:
+        app: my-app  # Label to identify pods
+    spec:
+      containers:
+      - name: my-app-container  # Name of the container
+        image: my-app:latest  # Docker image to use
+        ports:
+        - containerPort: 80  # Exposing port
