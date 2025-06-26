@@ -37,7 +37,7 @@ jobs:
           kubectl get pods --all-namespaces
       - name: deploy to kubernetes
         run: |
-          kubectl apply -f deployment.yaml
+          kubectl apply -f deployment.yml
 
 
 
