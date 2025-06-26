@@ -33,7 +33,7 @@ jobs:
          docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1
       - name: setup kebectl
         run: |
-          aws eks update-kubeconfig --name "curious-electro-outfit" 
+          aws eks update-kubeconfig --name "Fred-EKS-Cluster"
           kubectl get nodes -list
 
 
