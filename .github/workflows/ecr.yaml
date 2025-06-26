@@ -31,7 +31,7 @@ jobs:
          docker build -t freddy-repo:latest .
          docker tag freddy-repo:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1 
          docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1
-      - name: setup kebectl
+      - name: setup kubectl
         run: |
           aws eks update-kubeconfig --name "Fred-EKS-Cluster"
           kubectl get pods --all-namespaces
