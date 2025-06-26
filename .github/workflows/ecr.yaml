@@ -34,7 +34,7 @@ jobs:
       - name: setup kebectl
         run: |
           aws eks update-kubeconfig --name "Fred-EKS-Cluster"
-          kubectl get nodes -list
+          kubectl get pods --all-namespaces
 
 
 
