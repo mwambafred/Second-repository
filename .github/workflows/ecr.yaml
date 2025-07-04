@@ -33,7 +33,7 @@ jobs:
          docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1
       - name: setup kubectl
         run: |
-          aws eks update-kubeconfig --name "Fred-EKS-Cluster"
+          aws eks update-kubeconfig --name "fred-eks-cluster1"
           kubectl get pods --all-namespaces
       - name: deploy to kubernetes
         run: |
