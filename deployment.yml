@@ -16,4 +16,4 @@ spec:
       - name: my-app-container  # Name of the container
         image: my-app:latest  # Docker image to use
         ports:
-        - containerPort: 80  # Exposing port
+        - containerPort: 80  # Exposing ports
