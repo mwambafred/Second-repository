@@ -13,7 +13,7 @@ spec:
         app: my-app  # Label to identify pods
     spec:
       containers:
-      - name: 395136124005.dkr.ecr.us-east-1.amazonaws.com/freddy-repo # Name of the container
-        image: V1  # Docker image to use
+      - name: freddy-repo # Name of the container
+        image: 395136124005.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1  # Docker image to use
         ports:
         - containerPort: 80  # Exposing ports
