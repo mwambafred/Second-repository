@@ -16,4 +16,4 @@ spec:
       - name: freddy-repo # Name of the container
         image: 395136124005.dkr.ecr.us-east-1.amazonaws.com/freddy-repo:v1  # Docker image to use
         ports:
-        - containerPort: 80  # Exposing ports
+        - containerPort: 80  # Exposing port
