@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: devops-service
   labels:
-    app: devops-app
+    app: my-app
 spec:
   type: LoadBalancer
   selector:
-    app: devops-app
+    app: my-app
   ports:
     - protocol: TCP
       port: 80       # External port
