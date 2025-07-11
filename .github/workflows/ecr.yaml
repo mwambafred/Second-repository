@@ -39,6 +39,7 @@ jobs:
         run: |
           kubectl apply -f deployment.yml
           kubectl apply -f service.yml
+          kubectl get svc my-app
 
 
 
