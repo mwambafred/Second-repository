@@ -3,7 +3,7 @@ kind: Deployment  # Defines the type of resource
 metadata:
   name: my-app  # Name of the deployment
 spec:
-  replicas: 2  # Number of pods to run
+  replicas: 4  # Number of pods to run
   selector:
     matchLabels:
       app: my-app  # Defines pod labels to match
